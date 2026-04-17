@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz JS</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app">
+
+      <div id="pantalla-inicio">
+        <h1>Quiz JavaScript</h1>
+        <p>10 preguntas · Tiempo limitado</p>
+        <button id="btn-iniciar">Comenzar</button>
+      </div>
+
+      <div id="pantalla-quiz" class="oculto">
+        <div class="quiz-header">
+          <span id="progreso">Pregunta 1 de 10</span>
+          <span id="temporizador">30s</span>
+        </div>
+        <div class="barra-progreso">
+          <div id="barra-fill"></div>
+        </div>
+        <div class="pregunta-card">
+          <p id="pregunta"></p>
+          <div id="opciones"></div>
+        </div>
+      </div>
+
+      <div id="pantalla-resultado" class="oculto">
+        <div class="resultado-card">
+          <div id="emoji-resultado">🎯</div>
+          <h2 id="titulo-resultado"></h2>
+          <p id="puntaje"></p>
+          <p id="mensaje-resultado"></p>
+          <button id="btn-reiniciar">Jugar de nuevo</button>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
