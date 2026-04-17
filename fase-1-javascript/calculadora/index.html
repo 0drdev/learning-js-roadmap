@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="pantalla">
+        <div id="expresion"></div>
+        <div id="resultado">0</div>
+      </div>
+      <div class="botones">
+        <button class="btn-ac" data-accion="limpiar">AC</button>
+        <button class="btn-op" data-accion="signo">+/-</button>
+        <button class="btn-op" data-accion="porcentaje">%</button>
+        <button class="btn-op" data-operador="/">÷</button>
+
+        <button data-numero="7">7</button>
+        <button data-numero="8">8</button>
+        <button data-numero="9">9</button>
+        <button class="btn-op" data-operador="*">×</button>
+
+        <button data-numero="4">4</button>
+        <button data-numero="5">5</button>
+        <button data-numero="6">6</button>
+        <button class="btn-op" data-operador="-">−</button>
+
+        <button data-numero="1">1</button>
+        <button data-numero="2">2</button>
+        <button data-numero="3">3</button>
+        <button class="btn-op" data-operador="+">+</button>
+
+        <button class="btn-cero" data-numero="0">0</button>
+        <button data-accion="decimal">.</button>
+        <button class="btn-igual">=</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
